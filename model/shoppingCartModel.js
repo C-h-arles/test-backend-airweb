@@ -5,7 +5,7 @@ class ShoppingCartModel {
 
     constructor(authenticated_user){
         if(authenticated_user && authenticated_user.user.id){
-            this.fileName = "./repository/ShoppingCart_" + authenticated_user.user.id + ".json" 
+            this.fileName = "./db/ShoppingCart_" + authenticated_user.user.id + ".json" 
             this.authenticated_user = authenticated_user         
         }
     }
