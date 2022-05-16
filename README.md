@@ -7,10 +7,10 @@
 - Ouvrez un terminal à la racine du projet et executez ```npm install```
 - ensuite lancez le serveur en executant ```node index.js```
 
-Par défaut, le serveur écoute sur le port 8080. Il faudra alors envoyer vos requête sur ```http://localhost:8080/```
+Par défaut, le serveur écoute sur le port 8080. Il faudra alors envoyer vos requêtes sur ```http://localhost:8080/```
 Il est conseillé d'utiliser un outil comme _PostMan_ pour envoyer des requêtes http POST ET GET
 
-#### liste des appels prise en charge par l'API
+#### liste des appels pris en charge par l'API
 ###### Pour vous authentifier :
 Envoyez une requête POST à ```http://localhost:8080/user/check``` avec un JSON dans le body contenant une propriété _email_ (contenant l'email de l'utilisateur voulant se connecter) et _password_ (avec le mot de passe de l'utilisateur) 
 Exemple : 
@@ -42,7 +42,7 @@ Exemple :
   "quantity": 8
 }
 ```
-Si le produit communiqué est déjà présent dans votre panier, sa quantité s'additionera avec le quantité communiqué.
+Si le produit communiqué est déjà présent dans votre panier, sa quantité s'additionera avec le quantité communiquée.
 
 ###### Pour supprimer un produit de votre panier 
 __Cet appel est réservé pour les utilisateurs authentifiés__
@@ -56,7 +56,7 @@ Exemple :
 
 ###### Pour accéder à votre panier
 __Cet appel est réservé pour les utilisateurs authentifiés__
-Faite un appel GET à ```http://localhost:8080/shoppingCart```
+Faites un appel GET à ```http://localhost:8080/shoppingCart```
 
 
 
